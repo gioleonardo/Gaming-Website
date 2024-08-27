@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HOME</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- local Icons style -->
+        <link rel="stylesheet" href="./images/fontawesome-free-6.5.1-web/css/all.min.css">
+        <!-- AJAX JQUERY TOAST LIBRARY CSS-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    </head>
+    <body>
+        <!-- MY NAV LINKS -->
+        <header class="header">
+            <nav>
+                <a href="home.html"><img src="images/logo.png" id="logo" alt=""></a>
+                <ul class="nav-list" data-visible="false">
+                    <li><a aria_current="page" class="active" href="home.html">Home</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="about .html">About</a></li>
+                    <li><a href="products.php">Products</a></li>
+                    <li><a href="order.php">Order</a></li>
+                    <li><a href="useful_links.html">Useful links</a></li>
+                    <li><a href="search.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="register.php"><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                </ul>
+                <i class="fa-solid fa-bars-staggered" id="menu-bar" aria-controls="nav-list" aria-expanded="false"><span class="sr-only">Menu</span></i>   
+            </nav>
+            <div id="intro">
+                <h5>Welcome to GioleonGaming stores</h5>
+                <h1>Find Your Next Exciting Video Game Journey</h1>
+                <div>
+                <p> 
+                    Regardless of your  preference for consoles, PCs, or tabletop gaming, we have something for everyone.
+                </p>
+                <button id="leave_page"><a href="products.php">ORDER NOW  <i class="fa-regular fa-circle-right"></i></a></button>
+            </div>
+        </header>
+
+        <!-- MY PRODUCT DESCRIPTIONS -->
+        <section class="featured-games">
+            <h2>FEATURED PRODUCTS</h2>
+            <P>Best games and accesories for the best prices</P>
+            <div class="games-con">
+                <div class="f-gm">
+                    <img src="images/games/gta-5.jpg" alt="GTA-5 game">
+                    <div class="description">
+                        <span>Rockstar</span>
+                        <h5>GTA V</h5>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4>£14</h4>
+                        <a href='products.php'><button class= prod_but name =''><i class='fa-solid fa-cart-shopping'></i></button></a>
+                    </div>
+                </div>
+
+                <div class="f-gm">
+                    <img src="images/games/ps5.jpg" alt="Ps 5 console">
+                    <div class="description">
+                        <span>Sony</span>
+                        <h5>PS5</h5>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h4>£400</h4>
+                        <a href='products.php'><button class= prod_but name =''><i class='fa-solid fa-cart-shopping'></i></button></a>
+                    </div>
+                </div>
+
+                <div class="f-gm">
+                    <img src="images/games/assasins-creed.jpg" alt="assasins-creed game">
+                    <div class="description">
+                        <span>Ubisoft</span>
+                        <h5>ASSASINS CREED 3</h5>
+                        <div class="rating">
+                      		<i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                        </div>
+                        <h4>£6</h4>
+                        <a href='products.php'><button class= prod_but name =''><i class='fa-solid fa-cart-shopping'></i></button></a>
+                    </div>
+                </div>
+
+                <div class="f-gm">
+                    <img src="images/games/witcher.jpg" alt="game pads">
+                    <div class="description">
+                        <span>CD projekt red</span>
+                        <h5>Witcher: wild hunt</h5>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h4>£15</h4>
+                        <a href='products.php'><button class= prod_but name =''><i class='fa-solid fa-cart-shopping'></i></button></a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </section>
+        <!-- FOOTER STYLES -->
+        <footer>
+
+            <div class="container">
+                <div class="footer-info">
+                    <div>
+                        <img src="images/logo.png" id="logo" alt="logo">
+                        <ul role="list" aria-label="social-links" class="social-list">
+                            <li><a href="#"><i class="fa-brands fa-steam"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-playstation"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-xbox"></i></i></a></li>
+                        </ul>                        
+                    </div>
+
+                    <div>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Privacy policy</a></li>
+                                <li><a href="">Contact us</a></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="">Terms and condition</a></li>
+                                <li><a href="">View Cart</a></li>
+                                <li><a href="">help</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div style="z-index: 1000;">
+                        <form action="get">
+                            <input type="email" id="email" placeholder="leo@shnail.com" name="email">
+                            <button class="button">sign in</button>
+                            <p><i class="fa-regular fa-copyright"></i> 2024. All rights Reserved</p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js" async defer></script>
+        <!-- JQERY LINK -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- JQUERY CODE TO ALERT A MESSAGE AFTER A BUTTON IS CLICKED -->
+        <script>
+            $(document).ready(function() {
+                $("#leave_page").click(function() {
+                    alert("Are you sure yo want to leave this page? ");
+                });
+            });
+        </script>
+    </body>
+</html>

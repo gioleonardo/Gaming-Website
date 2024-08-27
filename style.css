@@ -1,0 +1,726 @@
+/* UNIVERSAL STYLES */
+html:focus-within{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'syne';
+    color: beige;
+}
+body{
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: black;
+}
+.body-bg{
+    background-image: linear-gradient(black, black, #fdfc01);
+}
+
+/* indexPage style */
+.index{
+    background-image: linear-gradient(black, black, #fdfc01);
+    overflow-x: hidden;
+}
+#disclaimer{
+    margin: 10em 40px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    color:antiquewhite;
+}
+#disclaimer button{
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #fdfc01;
+    border-radius: 0;
+    border-radius: 100vmax;
+    background: transparent;
+}
+#disclaimer h2, h3{
+    padding-bottom: 20px;
+}
+#disclaimer p{
+    font-size: large;
+}
+#disclaimer button a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 700;
+}
+
+/* Homepage styles */
+.header{
+    min-height: 100dvh;
+    background-image:  linear-gradient(
+     rgba(0,0,0,1), 
+     rgba(0,0,0,0.1),
+     rgba(0,0,0,1),
+     rgba(0,0,0,1)
+     ), 
+     url('./images/background.png');
+    background-size: cover;
+    overflow-x: hidden;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 7%;
+    position: sticky;
+}
+#logo{
+    width: 120px;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.nav-list a:hover,
+.nav-list a.active{
+    border-bottom: 2px solid #fdfc01;
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 16px;
+}
+#menu-bar{
+    color: white;
+    display: none;
+    font-size: 27px;  
+}
+#intro{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    min-height: 100dvh;
+    padding: 40px 80px;
+}
+#intro a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#intro h5, h1{
+    padding-bottom: 10px;
+    text-shadow: 1px 1px black;
+}
+#intro p{
+   text-align: left;
+   padding-bottom: 10px;
+   text-shadow: 1px 1px black;
+}
+#intro button{
+    background: none;
+    border: 2px solid #81811d;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+}
+.featured-games{
+    text-align: center;
+    margin-top: 20px;
+    background-color: black; 
+}
+.games-con{
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.featured-games .f-gm{
+    width: 21%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 2px solid #fdfc01;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.featured-games .f-gm img{
+    width: 100%;
+    border-radius: 20px;
+}
+.featured-games .description{
+    text-align: start;
+    padding:10px 0;
+    position: relative;
+}
+.featured-games h2{
+    padding-top:10px;
+    font-weight: 900;
+}
+.featured-games .description h5{ 
+    font-size: 12px;
+}
+.featured-games .description h4{
+    font-size: 12px;
+}
+.description{
+    align-items:  justify;
+}
+.rating i{
+    color: gold;
+}
+.prod_but{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0.8px;
+    right: 3px;
+    background-color: #fdfc01;
+    border-radius: 100vmax;
+    text-align: center;
+}
+.prod_but i{
+    color: black;
+}
+.qty, .qty option{
+    color: black;
+}
+
+/* footer style */
+footer{
+    background-image: linear-gradient(rgb(80, 77, 77), black, black);
+    margin: 0;
+    padding: 3rem;
+    color: white;
+}
+.container{
+    width: min(1110px, 100%);
+    margin-inline: auto;
+}
+.footer-info{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+.footer-info li{
+    list-style: none;
+    padding-bottom: 2px;
+}
+.footer-nav a{
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+.footer-nav a:hover{
+    color: #fdfc01;
+}
+.social-list{
+    display: flex;
+    gap: 0.8rem;
+    font-size: 20px;
+}
+.social-list i{
+    color: white;
+    transition: 0.3ms;
+}
+.social-list i:hover{
+    color: #fdfc01;
+}
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    border-radius: 100vmax;
+    padding: 0.8em;
+    background-color: #fdfc01;
+    color: black;
+    font-weight: 500;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#email{
+    width: 15em;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+/* contact page style/ gen-form style */
+.form{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: min(1110px, 100%); 
+}
+.form-img i{
+    font-size: 15em;
+}
+.gen-form-style{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.title h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #fdfc01;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.fields{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.fields:focus{
+    border: 2px solid #fdfc01;
+}
+.gen-form-style textarea{
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.gen-form-style button{
+    margin: 10px 0;
+    padding: 10px;
+    width: 30%;
+    font-weight: 700;
+    color: black;
+    border: 0;
+    border-radius: 100px;
+    background-color: #fdfc01;
+    cursor: pointer;
+}
+.gen-form-style button i{
+    color: black;
+}
+
+
+/* REGISTER AND LOGIN STYLES */
+.register-login{
+    box-sizing: border-box;
+    margin:0 5em 7em 5em;
+}
+.register-login input{
+   margin-bottom: 10px;
+}
+.register-header{
+    text-align: left;
+}
+.register-header h2{
+    border-bottom: 2px solid #fdfc01;
+    font-weight: bolder;
+}
+.register-header p{
+    background-color: rgb(39, 38, 38);
+    padding: 5px;
+    font-weight: bolder;
+}
+.account-style{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.checkbox-container label{
+    font-weight: bold;
+    padding: 0;
+}
+#checkbox{
+    position: relative;
+    right: 12em;
+    top: 4px;
+}
+
+
+/* ABOUT PAGE STYLE */
+.about-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    background-image: linear-gradient(black, black, #fdfc01);
+    padding: 2em 85px;
+}
+#about-img{
+    border: none;
+    font-size: 17em;
+}
+#about-intro{
+    text-align: left;
+    color: white;
+    padding-top: 50px;
+}
+#about-intro h2{
+    text-align: left;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 5em 5em;
+    text-align: center;
+}
+
+/* SEARCH PAGE STYLE */
+.search_form{
+    display: block;
+    margin-left: 7em;
+    margin-bottom: 7em;
+}
+.search_form div{
+    padding: 10px;
+}
+.search_form label{
+    font-weight: bold;
+}
+.search_form select{
+    width: 50%;
+    font-weight: bold;
+    color:black;
+}
+.search_form h3{
+    text-align: center;
+    margin-top: 2em;
+}
+#search{
+    width: 80%;
+    border-radius: 100vmax;
+    padding: 5px;
+    margin-right: 5px;
+    color:black;
+}
+#search_button{
+    border: 0;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#search_result_header{
+    text-align: center;
+}
+.error_message{
+    text-align: center;
+    color: red;
+}
+.success_message h3{
+    text-align: center;
+    font-weight: bold;
+    color: #fdfc01;
+}
+table{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.table_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+}
+
+
+/* USEFUL LINKS PAGE STYLES*/
+.links{
+    text-align: center;
+    margin: 30px 50px;
+}
+.links ul li{
+    list-style: none;
+}
+.links h2{
+    margin-bottom: 10px;
+}
+.links ul li a{
+    padding: 10px;
+}
+
+
+/* ADMIN PAGE STYLES */
+.admin-style{
+    margin: 3em 7em;
+}
+.admin-style h2, h3{
+    text-align: center;
+}
+.admin-style h3{
+    margin-bottom: 2em;
+}
+.admin-style h4{
+    border: 2px solid #fdfc01;
+    padding: 7px;
+    border-radius: 10px;
+}
+.edit-style input{
+    color: black;
+}
+.edit-button{
+    background-color: #01fd0e;
+    padding: 5px;
+}
+.edit-button a{
+    color: black;
+    text-decoration: none;
+}
+.delete-button{
+    background-color: rgb(238, 41, 41);
+    padding: 5px;
+}
+.delete-button a{
+    color: black;
+    text-decoration: none;
+}
+.create-button{
+    background: rgb(56, 56, 226);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.create-button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.back a{
+    text-decoration: none;
+    color: black;
+}
+.create-style input{
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+/* PAGE RESPONSIVENESS */
+/* header */
+
+@media (max-width: 35em){
+    .nav-list{
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        background: hsl(0, 0%, 0% / 0.5);
+        backdrop-filter: blur(3rem);
+        padding: min(30vh, 10rem) 2rem;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    /* data attribute for javascript */
+    .nav-list[data-visible='true']{
+        transform: translateX(0%);
+    }
+    .nav-list li{
+        padding-bottom: 15px;
+    }
+    .nav-list a{
+        font-size: 12px;
+    }
+    .nav-list a:hover,
+    .nav-list a.active{
+       border: none;
+       color: #fdfc01
+    }
+    #intro{
+        color: white;
+        font-size: smaller;
+        top: 25%;
+        left: -7%;
+        text-align: center;
+    }
+    #menu-bar{
+        display: flex;
+        position: absolute;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        z-index: 2;
+        font-size: 20px;
+    }
+    #intro a{
+        font-size: 0.7em;
+    }
+    #intro button{
+        background: none;
+        border: 2px solid #81811d;
+        border-radius: 7px;
+        width: 50%;
+    }
+    /* contact page */
+    .form-img i{
+        display: none;
+    }
+    .fields{
+        width: 50vw;
+    }
+    .account-style{
+        display: block;
+    }
+
+    /* footer */
+    .footer-nav a{
+       font-size: smaller;
+    }
+    .social-list{
+        display: flex;
+        gap: 0.25rem;
+        font-size: 15px;
+    }
+    .button{
+        padding: 0.5em;
+        margin: 2px;
+    }
+    
+    #email{
+        width: 7em;
+        padding: 5px;
+        border-radius: 7px;
+    }
+    .footer-info{
+        display: block;
+        text-align: center;
+    }
+    .footer-info .footer-nav{
+        display: block;
+        text-align: center;
+    }
+    .social-list {
+        justify-content: center;
+        align-items: center;
+    }
+    footer #logo{
+        width: 30%;
+    }
+
+    /* about styling */
+    .about-header{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 20px 50px;
+    }
+    #about-intro  p{
+        font-size: 10px;
+   }
+   #about-img{
+        font-size: 10em;
+    }
+   .about-content{
+        display: block;
+        text-align: center;
+        font-size: smaller;
+    }  
+    #about-description{
+        padding: 10px 0;
+    } 
+}
+
+@media (min-width: 35em) and (max-width: 70em){
+    nav{
+        padding: 20px 4%;
+    }
+    nav #logo{
+       width: 70px;
+    }
+    .nav-list a{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    #intro{
+        top: 20%;
+        font-size: small;
+    }
+    .nav-list a:hover,
+    .nav-list a.active{
+        border-bottom: 2px solid #fdfc01;
+        border-radius: 2px;
+        padding: 2px;
+    }
+    #intro h1{
+        font-size: 17px;
+    }
+    #intro button{
+        background: none;
+        border: 2px solid #81811d;
+        border-radius: 7px;
+        width: 10em;
+    }
+    #intro a{
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-size: 9px;
+        font-weight: bolder;
+    }
+    #featured-games .f-gm{
+        width: 10%;
+        min-width: 250px;
+    }
+
+    /* contact page */
+    .form-img i{
+        display: none;
+    }
+    .fields{
+        width: 30vw;
+    }
+    .account-style{
+        display: block;
+    }
+    .button{
+        padding: 0.7em;
+        margin: 2px;
+    }
+    #email{
+        width: 10em;
+        padding: 5px;
+        border-radius: 7px;
+    }  
+    /* about page */
+   .about-header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 50px;
+    }
+    #about-intro  p{
+        font-size: 12px;
+        padding: 5px 0 30px 0;
+   }
+   .about-content{
+        display: block;
+        text-align: center;
+        font-size: smaller;
+    }  
+    #about-description{
+        padding: 10px 0;
+    } 
+
+}
